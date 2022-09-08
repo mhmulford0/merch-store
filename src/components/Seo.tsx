@@ -3,12 +3,11 @@ import { useRouter } from 'next/router';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+  title: 'Developer DAO Merch Store',
+  siteName: 'Developer DAO Merch Store',
+  description: 'Get Your D_D Merch Here',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'merch.developerdao.com',
   type: 'website',
   robots: 'follow, index',
   /**
@@ -65,16 +64,8 @@ export default function Seo(props: SeoProps) {
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />
-          <meta
-            name='publish_date'
-            property='og:publish_date'
-            content={meta.date}
-          />
-          <meta
-            name='author'
-            property='article:author'
-            content='Theodorus Clarence'
-          />
+          <meta name='publish_date' property='og:publish_date' content={meta.date} />
+          <meta name='author' property='article:author' content='Theodorus Clarence' />
         </>
       )}
 
@@ -83,10 +74,7 @@ export default function Seo(props: SeoProps) {
         <link key={linkProps.href} {...linkProps} />
       ))}
       <meta name='msapplication-TileColor' content='#ffffff' />
-      <meta
-        name='msapplication-TileImage'
-        content='/favicon/ms-icon-144x144.png'
-      />
+      <meta name='msapplication-TileImage' content='/favicon/ms-icon-144x144.png' />
       <meta name='theme-color' content='#ffffff' />
     </Head>
   );

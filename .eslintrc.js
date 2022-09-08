@@ -18,13 +18,11 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
 
     'react/display-name': 'off',
-    'react/jsx-curly-brace-presence': [
-      'warn',
-      { props: 'never', children: 'never' },
-    ],
+    'react/jsx-curly-brace-presence': ['warn', { props: 'never', children: 'never' }],
 
     //#region  //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',
+    '@next/next/no-img-element': 'off',
     'unused-imports/no-unused-imports': 'warn',
     'unused-imports/no-unused-vars': [
       'warn',
