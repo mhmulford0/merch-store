@@ -81,10 +81,7 @@ export const navigation = {
       ],
     },
   ],
-  pages: [
-    { name: 'Company', href: '#' },
-    { name: 'Stores', href: '#' },
-  ],
+  pages: [{ name: 'Another Page', href: '#' }],
 };
 export const collections = [
   {

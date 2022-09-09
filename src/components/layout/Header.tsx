@@ -19,8 +19,8 @@ const Header = ({ setOpen }: Props) => {
               {/* Logo (lg+) */}
               <div className='hidden lg:flex lg:flex-1 lg:items-center'>
                 <a href='#'>
-                  <span className='sr-only'>Your Company</span>
-                  <img className='h-8 w-auto' src='/public/logo.png' alt='' />
+                  <span className='sr-only'>Devloper DAO</span>
+                  <img className='h-8 w-auto' src='/images/logo.png' alt='' />
                 </a>
               </div>
 
@@ -36,7 +36,7 @@ const Header = ({ setOpen }: Props) => {
                               <Popover.Button
                                 className={twMerge(
                                   open
-                                    ? 'text-indigo-600'
+                                    ? 'text-black-600'
                                     : 'text-gray-700 hover:text-gray-800',
                                   'relative flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out'
                                 )}
@@ -44,7 +44,7 @@ const Header = ({ setOpen }: Props) => {
                                 {category.name}
                                 <span
                                   className={twMerge(
-                                    open ? 'bg-indigo-600' : '',
+                                    open ? 'bg-black-600' : '',
                                     'absolute inset-x-0 -bottom-px z-20 h-0.5 transition duration-200 ease-out'
                                   )}
                                   aria-hidden='true'
@@ -144,12 +144,8 @@ const Header = ({ setOpen }: Props) => {
 
               {/* Logo (lg-) */}
               <a href='#' className='lg:hidden'>
-                <span className='sr-only'>Your Company</span>
-                <img
-                  src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
-                  alt=''
-                  className='h-8 w-auto'
-                />
+                <span className='sr-only'>Devloper DAO</span>
+                <img src='/images/logo.png' alt='' className='h-8 w-auto' />
               </a>
 
               <div className='flex flex-1 items-center justify-end'>

@@ -42,9 +42,9 @@ const HomePageMain = () => {
             <div className='mt-4 sm:mt-6'>
               <a
                 href='#'
-                className='inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 font-medium text-white hover:bg-indigo-700'
+                className='inline-block rounded-md border border-transparent bg-black py-3 px-8 font-medium text-white hover:bg-slate-800'
               >
-                Shop Collection
+                Shop
               </a>
             </div>
           </div>
@@ -76,9 +76,6 @@ const HomePageMain = () => {
                   </div>
                   <div className='absolute inset-0 flex items-end rounded-lg p-6'>
                     <div>
-                      <p aria-hidden='true' className='text-sm text-white'>
-                        Shop the collection
-                      </p>
                       <h3 className='mt-1 font-semibold text-white'>
                         <a href={collection.href}>
                           <span className='absolute inset-0' />
@@ -105,9 +102,9 @@ const HomePageMain = () => {
             </h2>
             <a
               href='#'
-              className='hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 md:block'
+              className='text-md hidden font-medium text-black hover:text-slate-500 md:block'
             >
-              Shop the collection
+              Shop
               <span aria-hidden='true'> &rarr;</span>
             </a>
           </div>
@@ -135,8 +132,7 @@ const HomePageMain = () => {
           </div>
 
           <div className='mt-8 text-sm md:hidden'>
-            <a href='#' className='font-medium text-indigo-600 hover:text-indigo-500'>
-              Shop the collection
+            <a href='#' className='font-medium text-slate-600 hover:text-slate-500'>
               <span aria-hidden='true'> &rarr;</span>
             </a>
           </div>
