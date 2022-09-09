@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { collections, perks, trendingProducts } from '@/constant/env';
 
 const HomePageMain = () => {
@@ -40,12 +42,14 @@ const HomePageMain = () => {
               D_D Merch
             </h1>
             <div className='mt-4 sm:mt-6'>
-              <a
-                href='#'
-                className='inline-block rounded-md border border-transparent bg-black py-3 px-8 font-medium text-white hover:bg-slate-800'
-              >
-                Shop
-              </a>
+              <Link href='/product'>
+                <a
+                  href='#'
+                  className='inline-block rounded-md border border-transparent bg-black py-3 px-8 font-medium text-white hover:bg-slate-800'
+                >
+                  Shop
+                </a>
+              </Link>
             </div>
           </div>
         </div>
